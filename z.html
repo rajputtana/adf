@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rajputtana Webpage</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: pink;
+    }
+
+    .navbar {
+      background-color: #232f3e;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e');
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .product {
+      background: red;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      transition: 0.2s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.03);
+    }
+
+    .product img {
+      width: 100%;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .product-title {
+      font-weight: bold;
+      margin: 10px 0;
+      color: white;
+    }
+
+    .product-price {
+      color: yellow;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .product button {
+      background-color: pink;
+      border: 1px solid #a88734;
+      padding: 8px 12px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .product button:hover {
+      background-color: #ffb6c1;
+    }
+
+    .footer {
+      background-color: #232f3e;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 600px) {
+      .nav-links {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Rajputtana Webpage</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Deals</a>
+      <a href="#">Orders</a>
+      <a href="#">Cart</a>
+    </div>
+  </div>
+
+  <!-- Hero Banner -->
+  <div class="hero">Great Deals Just for You!</div>
+
+  <!-- Products Grid -->
+  <div class="products">
+    <!-- 20 Products -->
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1578683765884-55f9e5f76e09" alt="Wine">
+      <div class="product-title">Red Wine</div>
+      <div class="product-price">₹1,299</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1614928228256-8c3f19fcdb5f" alt="Condom">
+      <div class="product-title">Durex Condom</div>
+      <div class="product-price">₹199</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://images.unsplash.com/photo-1603787081104-92f9e7f2e6a1" alt="Horse">
+      <div class="product-title">Toy Horse</div>
+      <div class="product-price">₹899</div>
+      <button>Add to Cart</button>
+    </div>
+    <!-- Remaining 17 products -->
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61nPiOOv9BL.AC_UY327_FMwebp_QL65.jpg" alt="Laptop">
+      <div class="product-title">HP Laptop</div>
+      <div class="product-price">₹45,999</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/31m00C3suhL.SX300_SY300_QL70_FMwebp.jpg" alt="Phone">
+      <div class="product-title">Redmi Smartphone</div>
+      <div class="product-price">₹12,999</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/41QqQv9-4GL.SX300_SY300_QL70_FMwebp.jpg" alt="Headphones">
+      <div class="product-title">Boat Headphones</div>
+      <div class="product-price">₹999</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61aaVd2Yk7L.AC_UL320.jpg" alt="Shoes">
+      <div class="product-title">Nike Shoes</div>
+      <div class="product-price">₹3,499</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61IMRs+o0iL.AC_UY327_QL65.jpg" alt="Smart Watch">
+      <div class="product-title">Amazfit Watch</div>
+      <div class="product-price">₹4,299</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71XrEv5U72L.AC_UL320.jpg" alt="Speaker">
+      <div class="product-title">JBL Speaker</div>
+      <div class="product-price">₹1,799</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71V--WZVUIL.AC_UL320.jpg" alt="Tablet">
+      <div class="product-title">Samsung Tablet</div>
+      <div class="product-price">₹15,999</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61cwywLZR-L.AC_UL320.jpg" alt="Camera">
+      <div class="product-title">Canon Camera</div>
+      <div class="product-price">₹39,499</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/71qkzkCzURL.AC_UL320.jpg" alt="Microwave">
+      <div class="product-title">LG Microwave</div>
+      <div class="product-price">₹7,499</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/81drfTT9ZfL.AC_UL320.jpg" alt="Book">
+      <div class="product-title">Atomic Habits</div>
+      <div class="product-price">₹399</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/81i7eG+7hJL.AC_UL320.jpg" alt="TV">
+      <div class="product-title">OnePlus Smart TV</div>
+      <div class="product-price">₹24,999</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/81nC6DU5DdL.AC_UL320.jpg" alt="Bag">
+      <div class="product-title">Safari Backpack</div>
+      <div class="product-price">₹1,199</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61vJlP3LviL.AC_UL320.jpg" alt="Mixer">
+      <div class="product-title">Philips Mixer</div>
+      <div class="product-price">₹2,299</div>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://m.media-amazon.com/images/I/61Zf2iN-1-L.AC_UL320.jpg" alt="Keyboard">
+      <div class="product-title">Logitech Keyboard</div>
+      <div class="product-price">₹799</div>
+      <button>Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    © 2025 Rajputtana Webpage by Ankit Singh
+  </div>
+
+</body>
+</html>
